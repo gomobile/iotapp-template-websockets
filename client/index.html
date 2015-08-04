@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Web Sockets Template</title>
+    <link rel="stylesheet" href="client/index.css"/>
+    <!--    -->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="title">Web Sockets Client Console</div>
+    <div class="container">
+        <span class="sub-title">Connected User(s)</span>
+        <div id="user-container">
+            <div id="u1" class="user-circle"></div>
+        </div>
+    </div>
+    <div class="container">
+        <span class="sub-title">OnBoard LED status</span>
+        <div id="led-container" class="off"><span>OFF</span></div>
+        <div id="led-link-container"><a id="led-link">Toggle LED</a></div>
+    </div>
+
+    <span class="log-title">Log</span>
+    <div class="log-container">    
+        <ul id="messages"></ul>
+    </div>
+    <form action="">
+        <input autocomplete="off" id="m" placeholder="Post message"><button>Send</button>
+    </form>
+    <script src="client/index.js"></script>
+</body>
+</html>

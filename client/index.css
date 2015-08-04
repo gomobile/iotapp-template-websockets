@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font:13px Helvetica, Arial;
+}
+
+.title {
+    font-size: 2em;
+    padding: 0.5em 0em 0.5em 0em;
+    text-align: center;
+    background-color: rgb(17,94,162);
+    color: white;
+}
+
+.log-title {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container {
+    padding: 1em 0em;
+}
+
+.sub-title {
+    font-size: 2em;
+}
+
+.user-circle, .my-circle {
+    width: 2em;
+    height: 2em;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1em;
+    color: white;
+}
+
+.user-circle {
+    background-color: #2ecc71;
+}
+
+.my-circle {
+    background-color: rgb(17,94,162);
+}
+
+.user-circle span, .my-circle span, #led-container span {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#led-container {
+    width: 4em;
+    height: 2.5em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.off {
+    background-color: #bdc3c7;
+    border: 1px solid #7f8c8d;
+}
+
+.on {
+    background-color: limegreen;
+    border: 1px solid #7f8c8d;
+}
+
+#led-container > span {
+    padding: 3em 0em;
+    color: white;
+    font-weight: bold;
+}
+
+#led-link {
+    margin: 1em 1em;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+}
+
+#led-link-container {
+    margin-top: 1em;
+}
+
+
+.log-container {
+    height: 13em;
+    overflow-y: scroll;
+}
+
+form {
+    background: rgb(17,94,162);
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 85%;
+    margin-right: .5%
+}
+
+form button {
+    width: 13%;
+    background: #FFD630;
+    font-weight: bold;
+    border: none;
+    padding: 10px 3px;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#messages li {
+    padding: 5px 10px
+}
+
+#messages li:nth-child(odd) {
+    background: rgba(17,94,162, 0.1);
+}
+
+#messages li span {
+    color: gray;
+    font-style: italic;
+}
