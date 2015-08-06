@@ -1,0 +1,21 @@
+{
+   "mobile" : false,
+   "screenshotUrl" : "",
+   "highlights" : [
+      ""
+   ],
+   "articleUrl" : "",
+   "description" : "A simple nodeJS project that uses the socket.io Node module to enable real time communication between clients and the development board via a web browser to toogle the state of the onboard LED.",
+   "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
+   "title" : "Web Sockets",
+   "appPreview" : false,
+   "relName" : "4.0.0",
+   "tooltip" : "A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toogle the state of the onboard LED.",
+   "iconUrl" : "",
+   "repoName" : "iotapp-template-iot-websockets",
+   "appName" : "demo.ble-websockets",
+   "keywords" : [
+      ""
+   ],
+   "visible" : true
+}

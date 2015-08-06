@@ -31,8 +31,8 @@ body {
 }
 
 .user-circle, .my-circle {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     border-radius: 20px;
     display: inline-block;
     text-align: center;
@@ -91,7 +91,7 @@ body {
 
 
 .log-container {
-    height: 13em;
+    height: 10em;
     overflow-y: scroll;
 }
 

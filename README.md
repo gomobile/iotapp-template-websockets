@@ -1,13 +1,31 @@
-Local Temperature Node.js IoT App
+Web Sockets
 ============================
-The Blank Node.js sample application distributed within Intel® XDK IoT Edition under the Internet of Things  project creation option.
+A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toggle the state of the onboard LED.
+
+###Intel(R) Edison
+In order to leverage this project successfully, you will need to connect to a wireless network. For more information, visit https://software.intel.com/en-us/connecting-to-a-network-intel-edison-board.
+
+###Intel(R) Galileo
+In order to leverage this project successfully, you will need to connect to a wireless network. For more information, visit https://software.intel.com/en-us/articles/intel-galileo-getting-started-ethernet.
+
+
+###Intel(R) Edison & Intel(R) Galileo
+####(Intel XDK IoT Edition) Install node modules
+Within the "manage your xdk daemon and IoT device" menu, check the following boxes
+* Clean '/node_modules' before building
+* Run npm install directly on IoT Device (requires internet connection on device)
+
+You can installed the required node modules for this project which are found in the package.json file by pressing the Build/Install button.
+
+####(Intel XDK IoT Edition) Upload & Run project
+After installing the neccessary node modules, press the upload and run buttons to execute your project on your board. 
+
 
 Intel(R) XDK IoT Edition
 -------------------------------------------
 This template is part of the Intel(R) XDK IoT Edition. 
 Download the Intel(R) XDK IoT Edition at https://software.intel.com/en-us/html5/xdk-iot. To see the technical details of the sample, 
 please visit the sample article page at https://software.intel.com/en-us/xdk/docs/intel-xdk-iot-edition-nodejs-templates.
-
 
 Important App Files
 ---------------------------
