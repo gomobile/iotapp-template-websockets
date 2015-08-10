@@ -20,9 +20,8 @@ Develop Tab
 2. Press the "Settings" button
 3. Click the "Update libraries on board" option
 
-Review README.md file for indepth information about web sockets communication
+Review README.md file for in-depth information about web sockets communication
 
-Article: TBA 
 */
 
 var mraa = require('mraa'); //require mraa

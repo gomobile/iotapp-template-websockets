@@ -2,6 +2,12 @@ Web Sockets
 ============================
 A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toggle the state of the onboard LED.
 
+This NodeJS application consists of a client side application accessible via a web browser in which users can view the number of connected users, send text messages between users as well as toggle the onboard LED (ON/OFF) of your development board.
+
+You can view this application by inputting your development board's IP address as well as the port number (3000) specified in the main.js within the browser's address bar. For example, http://192.168.1.0:3000.
+
+**Note:** You can find your board's IP address by typing the ```ifconfig``` command in the Linux terminal via a Serial or SSH connection.
+
 ###Intel(R) Edison
 In order to leverage this project successfully, you will need to connect to a wireless network. For more information, visit https://software.intel.com/en-us/connecting-to-a-network-intel-edison-board.
 
@@ -20,8 +26,8 @@ You can installed the required node modules for this project which are found in 
 
 ####(Intel XDK IoT Edition) Upload & Run project
 After installing the neccessary node modules, press the:
-	1. Upload button
-	2. Run button to execute your project on your board.
+    1. Upload button
+    2. Run button to execute your project on your board.
 
 ####Getting Started with socket.io NodeJS Plug-in
 #####Design Considerations
