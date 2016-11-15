@@ -6,10 +6,10 @@
   "visible" : true,
   "sortWeight" : "0.0",
   "repoName" : "iotapp-template-websockets",
-  "tooltip" : "A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toogle the state of the onboard LED.",
-  "description" : "A simple nodeJS project that uses the socket.io Node module to enable real time communication between clients and the development board via a web browser to toogle the state of the onboard LED.",
+  "tooltip" : "Use the 'socket.io' node module to enable real-time communication.",
+  "description" : "A simple Node.js IoT project that uses the 'socket.io' node module to enable real-time communication between clients and the development board (via a web browser). Web socket data is used to toogle the state of the IoT board's onboard LED.",
   "articleUrl" : "",
-  "keywords" : [""],
-  "targets": ["edison","galileo","joule"],
+  "keywords" : ["web sockets","LED"],
+  "targets": ["edison","galileo"],
   "runtimes": ["node"]
 }
