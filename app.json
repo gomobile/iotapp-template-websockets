@@ -1,15 +1,15 @@
 {
   "title" : "Web Sockets",
   "projectTypeName" : "com.intel.xdk.projecttype.iotapp",
-  "sample": false,
-  "template": true,
+  "sample" : false,
+  "template" : true,
   "visible" : true,
   "sortWeight" : "0.0",
   "repoName" : "iotapp-template-websockets",
   "tooltip" : "Use the 'socket.io' node module to enable real-time communication.",
   "description" : "A simple Node.js IoT project that uses the 'socket.io' node module to enable real-time communication between clients and the development board (via a web browser). Web socket data is used to toogle the state of the IoT board's onboard LED.",
-  "articleUrl" : "",
+  "articleUrl" : "https://software.intel.com/en-us/xdk/docs/using-templates-nodejs-iot",
   "keywords" : ["web sockets","LED"],
-  "targets": ["edison","galileo"],
-  "runtimes": ["node"]
+  "targets" : ["edison","galileo"],
+  "runtimes" : ["node"]
 }

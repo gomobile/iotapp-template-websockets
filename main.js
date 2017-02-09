@@ -1,28 +1,23 @@
-/*jslint node:true, vars:true, bitwise:true, unparam:true */
-/*jshint unused:true */
-
 /*
-The Web Sockets Node.js sample application distributed within Intel® XDK IoT Edition under the IoT with Node.js Projects project creation option showcases how to use the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toggle the state of the onboard LED.
+ *
+ * Use the socket.io node module to enable real time communication between a
+ * client and your IoT board via a web browser. Use the web browser interface
+ * to toggle the state of the IoT device's on-board LED.
+ *
+ * Supported Intel IoT development boards are identified in the code.
+ *
+ * See LICENSE.md for license terms and conditions.
+ *
+ * https://software.intel.com/en-us/xdk/docs/using-templates-nodejs-iot
+ */
 
-MRAA - Low Level Skeleton Library for Communication on GNU/Linux platforms
-Library in C/C++ to interface with Galileo & other Intel platforms, in a structured and sane API with port nanmes/numbering that match boards & with bindings to javascript & python.
+/* spec jslint and jshint lines for desired JavaScript linting */
+/* see http://www.jslint.com/help.html and http://jshint.com/docs */
+/* jslint node:true */
+/* jshint unused:true */
 
-Steps for installing/updating MRAA & UPM Library on Intel IoT Platforms with IoTDevKit Linux* image
-Using a ssh client: 
-1. echo "src maa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/intel-iotdk.conf
-2. opkg update
-3. opkg upgrade
+"use strict" ;
 
-OR
-In Intel XDK IoT Edition under the Develop Tab (for Internet of Things Embedded Application)
-Develop Tab
-1. Connect to board via the IoT Device Drop down (Add Manual Connection or pick device in list)
-2. Press the "Settings" button
-3. Click the "Update libraries on board" option
-
-Review README.md file for in-depth information about web sockets communication
-
-*/
 
 var mraa = require('mraa'); //require mraa
 console.log('MRAA Version: ' + mraa.getVersion()); //write the mraa version to the Intel XDK console
@@ -65,25 +60,25 @@ io.on('connection', function(socket) {
     console.log('Number of Users Connected ' + connectedUsersArray.length);
     console.log('User(s) Connected: ' + connectedUsersArray);
     io.emit('connected users', connectedUsersArray);
-    
+
     socket.on('user disconnect', function(msg) {
         console.log('remove: ' + msg);
         connectedUsersArray.splice(connectedUsersArray.lastIndexOf(msg), 1);
         io.emit('user disconnect', msg);
     });
-    
+
     socket.on('chat message', function(msg) {
         io.emit('chat message', msg);
         console.log('message: ' + msg.value);
     });
-    
+
     socket.on('toogle led', function(msg) {
         myOnboardLed.write(ledState?1:0); //if ledState is true then write a '1' (high) otherwise write a '0' (low)
         msg.value = ledState;
         io.emit('toogle led', msg);
         ledState = !ledState; //invert the ledState
     });
-    
+
 });
 
 
