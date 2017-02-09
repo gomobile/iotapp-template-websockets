@@ -1,5 +1,4 @@
 /*
- *
  * Use the socket.io node module to enable real time communication between a
  * client and your IoT board via a web browser. Use the web browser interface
  * to toggle the state of the IoT device's on-board LED.
