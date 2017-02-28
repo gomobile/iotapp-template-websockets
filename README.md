@@ -1,5 +1,6 @@
 Intel® XDK IoT Node.js\* Web Sockets Demo App
 =============================================
+
 See [LICENSE.md](LICENSE.md) for license terms and conditions.
 
 This sample application is distributed as part of the
@@ -19,6 +20,7 @@ information regarding the upm sensor and actuator library APIs.
 
 App Overview
 ------------
+
 A simple nodeJS project that uses the socket.io NodeJS module
 to enable real time communication between clients and the
 development board via a web browser to toggle the state of
@@ -38,19 +40,23 @@ http://192.168.1.0:3000.
 ```ifconfig``` command in the Linux terminal via a Serial or
 SSH connection.
 
-###Intel(R) Edison
+### Intel(R) Edison
+
 In order to leverage this project successfully, you will need
 to connect to a wireless network. For more information, visit
 https://software.intel.com/en-us/connecting-to-a-network-intel-edison-board.
 
-###Intel(R) Galileo
+### Intel(R) Galileo
+
 In order to leverage this project successfully, you will need
 to connect to a wireless network. For more information, visit
 https://software.intel.com/en-us/articles/intel-galileo-getting-started-ethernet.
 
 
-###Intel(R) Edison & Intel(R) Galileo
-####(Intel XDK IoT Edition) Install node modules
+### Intel(R) Edison & Intel(R) Galileo
+
+#### (Intel XDK IoT Edition) Install node modules
+
 Within the "manage your xdk daemon and IoT device" menu,
 check the following boxes:
 
@@ -61,13 +67,16 @@ You can installed the required node modules for this project
 which are found in the package.json file by pressing the
 Build/Install button.
 
-####(Intel XDK IoT Edition) Upload & Run project
+#### (Intel XDK IoT Edition) Upload & Run project
+
 After installing the neccessary node modules, press the:
     1. Upload button
     2. Run button to execute your project on your board.
 
-####Getting Started with socket.io NodeJS Plug-in
-#####Design Considerations
+#### Getting Started with socket.io NodeJS Plug-in
+
+##### Design Considerations
+
 The necessary information needed for creating a web socket
 (socket.io) application:
 
@@ -103,7 +112,8 @@ app.use(express.static(__dirname + '/client'));
 app.use('/client', express.static(__dirname + '/client'));
 ```
 
-#####Socket.io EventListeners
+##### Socket.io EventListeners
+
 **Handling connection, and custom events**
 ```javascript
 //Socket.io Event handlers
@@ -151,23 +161,27 @@ http.listen(3000, function(){
 });
 ```
 
-####(Web Browser) View Client side application
+#### (Web Browser) View Client side application
+
 Input the IP address of your board plus the port number (3000)
 For example, http://192.168.1.0:3000
 
 Important App Files
 -------------------
+
 * main.js
 * package.json
 
 Important Project Files
 -----------------------
+
 * README.md
 * LICENSE.md
 * \<project-name.\>xdk
 
 Tested IoT Node.js Platforms
 ----------------------------
+
 * [Intel® Galileo Board for Arduino](http://intel.com/galileo)
 * [Intel® Edison Board for Arduino](http://intel.com/edison)
 
