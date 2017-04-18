@@ -21,9 +21,9 @@ information regarding the upm sensor and actuator library APIs.
 App Overview
 ------------
 
-A simple nodeJS project that uses the socket.io NodeJS module
-to enable real time communication between clients and the
-development board via a web browser to toggle the state of
+Use the Node.js socket.io module
+to implement real-time communication between a client and the
+IoT device via a web browser to toggle the state of
 the onboard LED.
 
 This NodeJS application consists of a client side application
@@ -39,18 +39,6 @@ http://192.168.1.0:3000.
 **Note:** You can find your board's IP address by typing the
 ```ifconfig``` command in the Linux terminal via a Serial or
 SSH connection.
-
-### Intel(R) Edison
-
-In order to leverage this project successfully, you will need
-to connect to a wireless network. For more information, visit
-https://software.intel.com/en-us/connecting-to-a-network-intel-edison-board.
-
-### Intel(R) Galileo
-
-In order to leverage this project successfully, you will need
-to connect to a wireless network. For more information, visit
-https://software.intel.com/en-us/articles/intel-galileo-getting-started-ethernet.
 
 
 ### Intel(R) Edison & Intel(R) Galileo
